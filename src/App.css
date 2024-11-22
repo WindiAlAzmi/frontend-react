@@ -1,0 +1,66 @@
+#root {
+  margin: 0 auto;
+  padding: 0rem; 
+  text-align: center;
+}
+
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container,  {
+        height: 820px; 
+        width: 80%; 
+        position:relative;
+    }
+
+    #dear {
+      position:absolute;
+      height:40px;
+      width:240px;
+      left:180px;
+      right:0px;
+      top:80px;
+      margin:0 auto;
+    }
+
+
+    #message {
+      position:absolute;
+      height:160px;
+      width:390px;
+      left:100px;
+      right:0px;
+      top:140px;
+      line-height:20px;
+      margin:0 auto;
+
+    }
+
+    #from  {
+      position:absolute;
+      height:40px;
+      width:240px;
+      left:180px;
+      right:0px;
+      top:270px;
+      margin:0 auto;
+
+    }
+      
+    .no-print {
+        display: none;
+    }
+
+    /* Pastikan gambar dan elemen lainnya tidak merubah ukuran */
+    img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover; /* Menjaga gambar tidak terdistorsi */
+    }
+  }
